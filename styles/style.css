@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-family: 'Fredoka', sans-serif;
+}
+
+#app {
+    width: 100%;
+    max-width: 650px;
+    min-height: 100vh;
+    background-image: url(../img/fundo4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#box-header {
+    width: 95%;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#box-title {
+    display: flex;
+    align-items: center;
+    color: rgb(74, 136, 131);
+}
+
+#box-img {
+    display: flex;
+    align-items: center;
+    object-fit: contain;
+}
+#box-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+/*About content----------------------------------------------------------*/
+#content {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about {
+    width: 65%;
+    height: max-content;
+    padding: 10px;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(60, 71, 73, 0.294);
+    border-radius: 20px;
+}
+#about-img {
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+}
+#about-img img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+}
+#about-text p {
+    padding: 2px;
+    text-align: center;
+    font-size: 15px;
+}
+#about-btn button {
+    width: 100%;
+    height: 20%;
+   padding: 5px 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    background-color: rgb(41, 4, 90);
+    color: beige;
+    cursor: pointer;
+    font-size: .7rem;
+    text-align: center;
+}
+#about-btn button:hover {
+    background-color: rgb(53, 25, 90);
+}
+
+#sub-title {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    margin-left: 35%;
+    margin-top: 10%;
+}
+#sub-title h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+#sub-title img {
+    width: 55%;
+    height: 25%;
+    object-fit: cover;
+    padding: 0;
+    margin-left: -8px;
+    margin-top: -10px;
+    font-weight: 900;
+    filter: brightness(95%);
+}
+img {
+    width: 35%;
+    height: 35%;
+    object-fit: cover;
+    padding: 0;
+    margin-left: -8px;
+    margin-top: -10px;
+    font-weight: 900;
+    filter: brightness(90%);
+}
+
+#explain {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    margin-top: 5%;
+    padding-top: 10px;
+    border-radius: 20px;
+    background-color: rgba(66, 88, 92, 0.141);
+}
+#explain-content {
+    width: 85%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    column-gap: 5%;
+    font-size: .70rem;
+    font-weight: 600;
+    text-align: center;
+    margin: auto;
+    padding: 5px;
+}
+
+#explain-content img {
+    width: 25%;
+    
+    padding-top: 10%;
+    object-fit: cover;
+    padding: 0;
+    font-weight: 900;
+    filter: brightness(80%);
+    margin-top: .5%;
+}
+#explain-content p {
+    width: 90%;
+    height: fit-content;
+    margin: auto auto auto auto;
+    padding-bottom: 5px;
+}
+/*About content---------------------------------------------------------*/
