@@ -25,19 +25,27 @@ body {
     width: 100%;
     max-width: 650px;
     min-height: 100vh;
-    background-image: url(../img/fundo_novo.jpeg);
+    background-color: #faf7ef;
+    /*
+    background-image: url(../img/fundo_novo2.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: top center;
+    */
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#box-header {
+    width: 100%;
+    height: 120px;
+    background-image: url(../img/fundo_top.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
-    flex-direction: column;
-    overflow: hidden;
-}
-
-#box-header {
-    width: 95%;
-    height: 110px;
-    display: flex;
+    flex-shrink: 0;
     justify-content: center;
     align-content: center;
 }
@@ -45,7 +53,7 @@ body {
 #box-title {
     display: flex;
     align-items: center;
-    color: rgb(74, 136, 131);
+    color: rgb(91, 156, 150);
 }
 
 #box-img {
@@ -63,31 +71,40 @@ body {
 #content {
     width: 100%;
     height: max-content;
+    background-image: url(../img/fundo_middle.png);
+    background-size: 100% auto; 
+    background-repeat: no-repeat;
+    background-position: top center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 10px;
 }
 
 #about {
     width: 65%;
     height: max-content;
-    padding: 10px;
+    padding: 20px 10px;
     gap: 5px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     background-color: rgba(60, 71, 73, 0.294);
+    box-shadow: 3px 3px 9px 0px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 3px 3px 9px 0px rgba(0, 0, 0, 0.5);
     border-radius: 20px;
 }
 #about-img {
-    width: 50%;
+    width: 60%;
     height: 50%;
     object-fit: contain;
+    display: flex;
+    justify-content: center;
 }
 #about-img img {
-    width: 80%;
-    height: 80%;
+    width: 70%;
+    height: 70%;
     object-fit: contain;
 }
 #about-text p {
@@ -102,7 +119,9 @@ body {
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 20px;
-    background-color: rgb(41, 4, 90);
+    background-color: rgb(19, 97, 128);
+    box-shadow: 3px 3px 9px 0px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 3px 3px 9px 0px rgba(0, 0, 0, 0.5);
     color: beige;
     cursor: pointer;
     font-size: .7rem;
@@ -113,19 +132,19 @@ body {
 }
 
 #sub-title {
-    width: 100%;
+    width: 65%;
     height: max-content;
     display: flex;
     flex-direction: column;
-    margin-left: 35%;
     margin-top: 10%;
 }
 #sub-title h3 {
+    width: 100%;
     font-size: 1.5rem;
     font-weight: 600;
 }
 #sub-title img {
-    width: 55%;
+    width: 100%;
     height: 25%;
     object-fit: cover;
     padding: 0;
@@ -153,6 +172,8 @@ img {
     padding-top: 10px;
     border-radius: 20px;
     background-color: rgba(66, 88, 92, 0.141);
+    box-shadow: 3px 3px 9px 0px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 3px 3px 9px 0px rgba(0, 0, 0, 0.5);
 }
 #explain-content {
     width: 85%;
@@ -185,3 +206,21 @@ img {
     padding-bottom: 5px;
 }
 /*About content---------------------------------------------------------*/
+#footer {
+    width: 100%;
+    min-height: 100px;
+    background-image: url(../img/fundo_footer.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-shrink: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 24px 16px;
+    text-align: center;
+    color: rgb(91, 156, 150);
+    margin-top: 5px;
+}
